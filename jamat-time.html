@@ -44,22 +44,22 @@
 								</a>
 							</li>
 
-							<li class="sidebar-item has-sub">
+							<li class="sidebar-item has-sub active">
 								<a href="#" class="sidebar-link">
 									<i class="bi bi-list-ul"></i>
 									<span>Manage Time</span>
 								</a>
-								<ul class="submenu" style="display: none">
+								<ul class="submenu" style="display: block">
 									<li class="submenu-item">
 										<a href="general-time.html">General Time</a>
 									</li>
-									<li class="submenu-item">
+									<li class="submenu-item active">
 										<a href="jamat-time.html">Jamat Time</a>
 									</li>
 								</ul>
 							</li>
 
-							<li class="sidebar-item active">
+							<li class="sidebar-item">
 								<a href="notice.html" class="sidebar-link">
 									<i class="bi bi-bell-fill"></i>
 									<span>Notice</span>
@@ -85,62 +85,82 @@
 				</header>
 
 				<div class="page-heading">
-					<div class="row">
-						<div class="col-12 col-md-6 order-md-1 order-last">
-							<h3>Notice</h3>
-							<!-- <p class="text-subtitle text-muted">Give textual form controls like input upgrade with custom styles, sizing, focus states, and more.</p> -->
-						</div>
-						<div class="col-12 col-md-6 order-md-2 order-first">
-							<nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Notice</li>
-								</ol>
-							</nav>
-						</div>
-					</div>
+					<h3>Jamat Time</h3>
 				</div>
 				<div class="page-content">
 					<!-- ========================================
             Content goes here
             ========================================== -->
 
-					<!-- Notice Start -->
 					<section class="section">
 						<div class="card">
 							<div class="card-header">
-								<h4 class="card-title">Notice Panel</h4>
+								<h4 class="card-title">জামাতের সময়সূচি</h4>
 							</div>
 
 							<div class="card-body">
-								<form action="">
-									<div id="noticeContainer">
-										<div class="notice-item input-group mb-3" id="notice-0">
-											<input type="text" name="notice" class="form-control" placeholder="Enter A Notice" aria-label="Enter A Notice" />
-											<button type="button" onclick="deleteNotice('notice-0')" class="btn btn-danger" id="">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-													<path
-														d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"
-													></path>
-												</svg>
-											</button>
+								<form class="row g-3">
+									<div class="col-md-4">
+										<label for="">ফজর</label>
+										<div class="form-group position-relative has-icon-left">
+											<input type="text" class="form-control jamat-input" placeholder="ফজর" />
+											<div class="form-control-icon">
+												<i class="bi bi-clock"></i>
+											</div>
 										</div>
 									</div>
-
-									<div class="mb-3">
-										<button type="button" id="addNotice" class="btn btn-info btn-sm">
-											<svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-												<path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path>
-											</svg>
-											Add New Notice
-										</button>
+									<div class="col-md-4">
+										<label for="">যোহর</label>
+										<div class="form-group position-relative has-icon-left">
+											<input type="text" id="" class="form-control jamat-input" placeholder="যোহর" />
+											<div class="form-control-icon">
+												<i class="bi bi-clock"></i>
+											</div>
+										</div>
 									</div>
-									<button type="submit" class="btn btn-primary">Save</button>
+									<div class="col-md-4">
+										<label for="">আছর</label>
+										<div class="form-group position-relative has-icon-left">
+											<input type="text" id="" class="form-control jamat-input" placeholder="আছর" />
+											<div class="form-control-icon">
+												<i class="bi bi-clock"></i>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<label for="">মাগরিব</label>
+										<div class="form-group position-relative has-icon-left">
+											<input type="text" id="" class="form-control jamat-input" placeholder="মাগরিব" />
+											<div class="form-control-icon">
+												<i class="bi bi-clock"></i>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<label for="">ইশা</label>
+										<div class="form-group position-relative has-icon-left">
+											<input type="text" id="" class="form-control jamat-input" placeholder="ইশা" />
+											<div class="form-control-icon">
+												<i class="bi bi-clock"></i>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<label for="">জুম্মা</label>
+										<div class="form-group position-relative has-icon-left">
+											<input type="text" id="" class="form-control jamat-input" placeholder="জুম্মা" />
+											<div class="form-control-icon">
+												<i class="bi bi-clock"></i>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button type="submit" class="btn btn-primary">Save</button>
+									</div>
 								</form>
 							</div>
 						</div>
 					</section>
-					<!-- Notice End -->
 				</div>
 
 				<!-- <footer>
